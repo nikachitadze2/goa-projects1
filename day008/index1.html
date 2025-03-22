@@ -1,0 +1,16 @@
+<center>
+    <h1>Calculator</h1>
+    <input type="number" id="userNumber" style="font-size: 20px;" placeholder="Enter a number">
+    <br><br>
+    <button style="font-size: 20px; width: 260px;" onclick="calculate()">Calculate</button>
+    <br><br>
+    <h2 id="result"></h2>
+</center>
+
+<script>
+    function calculate() {
+        let number = document.getElementById("userNumber").value;
+        let result = (number - 20) * 3;
+        document.getElementById("result").innerText = "Result: " + result;
+    }
+</script>

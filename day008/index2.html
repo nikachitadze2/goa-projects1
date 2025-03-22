@@ -1,0 +1,25 @@
+<center>
+    <h1>Calculator</h1>
+    <input type="number" id="num1" style="font-size: 20px;" placeholder="Enter first number">
+    <br><br>
+    <input type="number" id="num2" style="font-size: 20px;" placeholder="Enter second number">
+    <br><br>
+    <input type="number" id="num3" style="font-size: 20px;" placeholder="Enter third number">
+    <br><br>
+    <button style="font-size: 20px; width: 260px;" onclick="calculateMean()">Gamotvla</button>
+    <br><br>
+    <h2 id="result"></h2>
+</center>
+
+<script>
+    function calculateMean() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let num3 = parseFloat(document.getElementById("num3").value);
+      
+        let sum = num1 + num2 + num3;
+        let mean = sum / 3;
+
+        document.getElementById("result").innerText = "Results: " + mean;
+    }
+</script>
