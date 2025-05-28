@@ -1,0 +1,77 @@
+<!-- 3)***BOSS LEVEL*** შექმენით 5 გვერდიანი საიტი თქვენს შესახებ(პორთფოლიო): 
+    (HOME / ABOUT ME / CONTACT / REGISTER) 
+
+    . Home გვერდზე უნდა იყოს შესავალი თქვენს შესახებ (მოკლე ინფორმაცია)
+
+    . ABOUT ME გვერდზე უნდა იყოს თქვენს შესახებ დეტალური ინფორმაცია (სახელი-გვარი, ასაკი, ქვეყანა, სად სწავლობთ, პროგრამირების რა ენები იცით და ასე შემდეგ...)
+
+    . CONTACT გვერდზე უნდა იყოს ინფორმაცია თუ როგორ დაგიკავშირდნენ (ნომერი, ემაილი...) (გამოიყენეთ <a> თეგები, რომლებიც გადაგიყვანენ თქვენს სოციალურ გვერდზე (Facebook, Instagram, Github...)
+
+    . REGISTER გვერდზე უნდა იყოს სარეგისტრაციო ფორმა, სადაც მომხმარებელს მოსთხოვთ მის:
+     სახელს, გვარს, ემაილს, პაროლს, ასაკს, სქესს, ქვეყანას, საყვარელ ფერს და ტელეფონის ნომერს (ქვეყნის ასარჩევად გამოიყენეთ DropDown Menu, ფერის ასარჩევად გამოიყენეთ <input type="color">, 
+     სქესის ასარჩევად გამოიყენეთ radio... ბოლოს უნდა გქონდეთ დადასტურების ღილაკი 
+     და ეს მონაცემები უნდა გქონდეთ სწორედ დახარისხებული + სწორედ დაკავშირებული label-ებით 
+    და ასევე გამოყენებული უნდა გქონდეთ placeholder-ები... -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nika chitadze</title>
+</head>
+<body>
+    <form>
+        <nav style="position: absolute;top: 10px;right: 10px;color: red;">
+            <a href="" style="font-size: 20px;">HOME</a>
+            <a href="./About.html" style="font-size: 20px;">ABOUT ME</a>
+            <a href="./contact.html" style="font-size: 20px;">CONTACT</a>
+            <a href="./register.html" style="font-size: 20px;">REGISTER</a>
+        </nav>
+
+        <center>
+            <h1 style="font-size: 40px;">რეგისტრაცია</h1>
+        </center>
+            <br><br><br>
+            <label for="email" style="font-size: 20px;">email</label>
+            <input style="font-size: 20px;" type="email" name="email" id="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="password" style="font-size: 20px;">password</label>    
+            <input style="font-size: 20px;" type="password" name="password" id="password" maxlength="8" minlength="6" placeholder="Enter your password" required>
+            <br><br><br>
+            <label for="firstname" style="font-size: 20px;">firstname</label>
+            <input style="font-size: 20px;" type="text" name="firstname" id="firstname" placeholder="Enter your firstname" required>
+            <br><br><br>
+            <label for="lastname" style="font-size: 20px;">lastname</label>
+            <input style="font-size: 20px;" type="text" name="lastname" id="lastname" placeholder="Enter your lastname" required>
+            <br><br><br>
+            <label for="age" style="font-size: 20px;">age</label>
+            <input style="font-size: 20px;" type="number" name="age" id="age" placeholder="Enter your age" required>
+            <br><br><br>
+            <label for="color" style="font-size: 20px;">color</label>
+            <input style="font-size: 20px;" type="color" name="color" id="color" placeholder="Enter your favorite color" required>
+            <br><br><br>
+            <label for="number" style="font-size: 20px;">phone number</label>
+            <input style="font-size: 20px;" type="number" name="phone number" id="phone number" placeholder="Enter your phone number" required>
+            <br><br><br>
+
+            <label for="country">choese a country</label>
+                <select name="country" id="country">
+                    <option value="">none</option>
+                    <option value="">georgia</option>
+                    <option value="">canada</option>
+                    <option value="">usa</option>
+                    <option value="">turkey</option>
+                </select>
+
+            <br><br><br>
+            <label for="famale" style="font-size: 15px;">FAMALE</label>
+            <input style="font-size: 20px;" type="radio" value="famale" name="gender" id="famale" required>
+            <label for="male" style="font-size: 15px;">MALE</label>
+            <input style="font-size: 20px;" type="radio" value="male" name="gender" id="male" required>
+            <br><br><br>
+            <button style="font-size: 30px;">REGISTER</button>
+        
+    </form>
+</body>
+</html>    

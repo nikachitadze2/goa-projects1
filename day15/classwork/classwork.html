@@ -1,0 +1,37 @@
+<!-- ; ; 1)შექმენით სარეგისტრაციო ფორმა, სადაც მომხმარებელს
+;  შემოატანინებთ მის ქვეყანას  (drop down menu ), შემოატანინებთ მის სახელს და გვარს, შექმენით
+;   დადასტურების ღილაკი და სწორედ შეინახეთ ეს მონაცემები name ატრიბუტის დახმარებით,
+;  ყველა დეტალი ახსენით კომენტარების სახით ჩადურად -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+            <center>
+            <h1 style="font-size: 40px;">რეგისტრაცია</h1>
+            <br><br><br>
+            <label for="firstname" style="font-size: 20px;">firstname</label>
+            <input style="font-size: 20px;" type="text" name="firstname" id="firstname" placeholder="Enter your firstname" required>
+            <br><br>
+            <label for="lastname" style="font-size: 20px;">lastname</label>    
+            <input style="font-size: 20px;" type="lastname" name="lastname" id="lastname" placeholder="Enter your lastname" required>
+            <br><br><br>
+            <label for="country">choese a country</label>
+            <select name="country" id="country">
+                <option value="">none</option>
+                <option value="">georgia</option>
+                <option value="">canada</option>
+                <option value="">usa</option>
+                <option value="">turkey</option>
+            </select>
+            <br><br>
+            <button style="font-size: 30px;">REGISTER</button>
+        </center>
+    </form>    
+</body>
+</html>
